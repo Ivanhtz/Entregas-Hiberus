@@ -4,7 +4,7 @@
 ## CRUD - V1 (Responsive)
 
 WEB 💻 - [Taller HTML 5](https://entrega1-ivan-pizarroso.netlify.app/)
-GitHub 😺 - [Repositorio](https://entrega1-ivan-pizarroso.netlify.app/)
+GitHub 😺 - [Repositorio](https://github.com/Ivanhtz/Entregas-Hiberus/tree/master/1-Entrega-Ivan-Pizarroso)
 
 
 ![Texto alternativo de la imagen](./assets/images/desktop.png)

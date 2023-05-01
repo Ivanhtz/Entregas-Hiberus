@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de HTML5</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./assets/images/html.ico" type="image/x-icon">
+    <script src="./JS/index.js" defer></script>
+</head>
+
+<body id="body">
+    <div class="container">
+        <header class="header border">
+            <div class="header__lenguajes">
+                <a href="#">Español</a>
+                <a href="#">Inglés</a>
+            </div>
+
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="./assets/images/html.svg" alt="main logo">
+                </div>
+                <div class="header__title">
+                    <h1>Taller de HTML5</h1>
+                    <P>El mejor del mundo mundial</P>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav border">
+            <div class="burguer__menu">
+                <img src="./assets/images/burger.svg" alt="burguer icon">
+            </div>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#">Donde Estamos</a></li>
+                <li>
+                    <a href="#">Categorias</a>
+                    <ul>
+                        <li><a href="#">Categoria 1</a></li>
+                        <li><a href="#">Categoria 2</a></li>
+                        <li><a href="#">Categoria 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Aviso Legal</a></li>
+            </ul>
+        </nav>
+
+        <main class="main border">
+            <div class="main__flex">
+                <section class="main__section border">
+                    <header class="article__header">
+                        <div class="flex__header">
+                            <h2>Noticias: </h2>
+                            <span class="count"></span>
+                        </div>
+                        <div class="aritcle__header--container">
+                            <p>Nueva Noticia:</p>
+                            <div class="article__header--add">
+                                <img src="./assets/images/add.svg" alt="button add">
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="main__section--form">
+                        <div class="icon__form">
+                            <img src="./assets/images/postal-cover.png" alt="icon form">
+                        </div>
+                        <form id="form__add">
+                            <div class="inputs">
+                                <label for="title">Título:</label>
+                                <input type="text" name="title" id="title" required>
+                            </div>
+                            <div class="inputs">
+                                <label for="image">URL - Imagen:</label>
+                                <input type="text" name="image" id="image" required>
+                            </div>
+
+                            <div class="inputs">
+                                <label for="text">Texto:</label>
+                                <textarea name="text" id="text" cols="30" rows="10" wrap="soft" required></textarea>
+                            </div>
+
+                            <div class="buttons">
+                                <button>Agregar</button>
+                                <button type="button" class="buttons__close">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="main__section--form-update">
+                        <div class="icon__form">
+                            <img src="./assets/images/update.svg" alt="icon form">
+                        </div>
+                        <form id="form__update">
+                            <div class="inputs">
+                                <label for="title__update">Título:</label>
+                                <input type="text" name="title__update" id="title__update" required>
+                            </div>
+                            <div class="inputs">
+                                <label for="image__update">URL - Imagen:</label>
+                                <input type="text" name="image__update" id="image__update" required>
+                            </div>
+
+                            <div class="inputs">
+                                <label for="text__update">Texto:</label>
+                                <textarea name="text__update" id="text__update" cols="30" rows="10" wrap="soft"
+                                    required></textarea>
+                            </div>
+
+                            <div class="buttons__update">
+                                <button id="button__update" type="button">
+                                    Modificar
+                                </button>
+
+                                <button id="button__update--close" type="button">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="main__section--container">
+                        <div class="news"></div>
+                    </div>
+
+
+                    <nav class="main__nav">
+                        <ul class="listPage">
+                        </ul>
+                    </nav>
+                </section>
+
+                <aside class="aside border">
+                    <article class="aside__article border">
+                        <h3>Contenido Relacionado 1</h3>
+
+                        <div class="article__body">
+                            <p>Publicado el <time datetime="2001-05-15T19:00">15 de Mayo</time>.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, id?</p>
+                        </div>
+
+                        <div class="read__more">
+                            <a href="#">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <article class="aside__article border">
+                        <h3>Contenido Relacionado 1</h3>
+
+                        <div class="article__body">
+                            <p>Publicado el <time datetime="2001-05-15T19:00">15 de Mayo</time>.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, id?</p>
+                        </div>
+
+                        <div class="read__more">
+                            <a href="#">Leer mas</a>
+                        </div>
+                    </article>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="footer border">
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">Donde Estamos</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer__social">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/facebook.svg" alt="facebook icon">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/twitter.svg" alt="Twitter icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+    <nav class="mobile__menu">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="#">Donde Estamos</a></li>
+            <li>
+                <a href="#">Categorias</a>
+                <ul>
+                    <li><a href="#">Categoria 1</a></li>
+                    <li><a href="#">Categoria 2</a></li>
+                    <li><a href="#">Categoria 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Aviso Legal</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
